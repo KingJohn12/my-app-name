@@ -3,6 +3,8 @@ import { View, Text, TextInput, Button, FlatList, TouchableOpacity, StyleSheet }
 import styles from './styles';
 import { useFonts, JimNightshade_400Regular } from '@expo-google-fonts/jim-nightshade';
 import AppLoading from 'expo-app-loading';
+import CameraScreen from './screens/CameraScreen';
+import ResultScreen from './screens/ResultScreen';
 
 
 
@@ -52,6 +54,13 @@ if (!fontsLoaded) {
 
       <Button title={editingId ? "Update" : "Add"} onPress={addItem} />
 
+
+        <Button
+  title="Open Camera"
+  onPress={() => navigation.navigate("Camera")}
+/>
+      
+
       <FlatList
         data={items}
         keyExtractor={item => item.id}
@@ -73,6 +82,9 @@ if (!fontsLoaded) {
       />
     </View>
   );
+
+
+  
 
 }
 

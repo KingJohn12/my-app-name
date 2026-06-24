@@ -5,7 +5,7 @@ export default StyleSheet.create({
   container: { padding: 20, marginTop: 50,  backgroundColor: '#8e5e5e'},
   title: { fontSize: 45,
   fontFamily: 'JimNightshade_400Regular',
-  color: '#fff',
+  color: '#9f1f1f',
   marginBottom: 20,},
   input: { borderWidth: 5, padding: 10, marginBottom: 10 },
   row: { flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 25, },
